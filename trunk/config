@@ -1,0 +1,35 @@
+#!/bin/bash
+# Config file
+
+# compressed directories (img) will be stored here
+# (the whole folder will be erased now!)
+CD_ROOT=./cd
+
+# ar kurti base/*.mo ?
+CREATE_IMAGES="bin etc home lib opt root usr sbin var"
+
+# cd labelis
+CD_LABEL=llcs
+
+# ISO
+ISO=/tmp/$CD_LABEL.iso
+
+# DEBUG 
+
+DEBUG=1
+
+# name of initrd image
+INITRD_IMG=initrd
+
+# the size of RAMdisk (in KBytes)
+# if you change this, then you will need to change the size
+INITRD_SIZE=8192
+
+# kernel version. Change it to "2.6.10" for example, if you are building
+# LiveCD with a different kernel than the one you are actually running
+#KERNEL=`uname -r`
+KERNEL="2.6.12.2.0710ctg"
+
+# change this variable if you installed your distro to some directory.
+# for example ROOT=/tmp/newdir. You may leave it empty, then it defaults to /
+ROOT=../../root

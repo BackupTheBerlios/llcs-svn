@@ -1,0 +1,2 @@
+This software is released under GNU GENERAL PUBLIC LICENSE.
+

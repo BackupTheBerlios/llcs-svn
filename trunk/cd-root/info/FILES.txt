@@ -1,0 +1,23 @@
++ boot 
+  \ 
+   + kernels
+     \ 
+       + gal koks windozes imagas krovimasi ??? (del viso pikto + naudinga bus, jei kas nors perrasys savo bootloaderi windozes)
+       + vmlinuz 
+       + failsafe
+
++ linux 
+  \ 
+   + base // visi pagrindiniai .mo
+   + optional // papildomi .mo
+
++ info
+  \ 
+   + LICENSE.txt
+   + COPYING.txt
+   + REQUIREMENTS.txt
+   + CHANGELOG.txt
+
++ isolinux.cfg
++ livecd.sgn? // identifikacijis failas 
+
