@@ -1,0 +1,22 @@
+#!/bin/bash
+#
+# reikalingos funkcijos 
+
+
+# debuginimas
+
+shell()
+{
+ bash
+}
+
+debug()
+{
+ case $DEBUG in
+  1 | 2 ) echo $@ ;;
+  2 ) 	echo "Press enter to continue, s to drop shell"
+ 	if [ "s" = `read -n 1 -t 3` ]; then shell; fi ;;
+ esac
+}
+
+
